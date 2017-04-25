@@ -1,6 +1,8 @@
 body {
-    font-family: "PT Sans Narrow" sans-serif;
-    font-weight: 600;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
     background: #111 url("../img/body-bg.jpg") no-repeat center top;
     height: 2500px; /* удалить */
 }
@@ -15,9 +17,7 @@ body {
 header {
     background-color: #111;
     font-size: 16px;
-    font-family: "PT Sans Narrow" sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
 
 }
 
@@ -33,7 +33,6 @@ header {
 
 
 .main-navigation {
-    min-height: 70px;
     width: 780px;
 
 }
@@ -43,11 +42,13 @@ header {
     flex-direction: row;
     text-decoration: none;
     list-style: none;
+    
 
 }
 
 .main-navigation li {
-    margin-right: 35px;
+    /*margin-right: 35px; */
+   
 
 }
 
@@ -59,11 +60,23 @@ header {
 .main-navigation a {
     text-decoration: none;
     color: #fff;
+    padding-top: 17.7px;
+    padding-bottom: 21.7px;
+    padding-right: 14px;
+    padding-left: 14px;
 }
+
+.main-navigation a:hover {
+    background: #242424;
+    
+    
+}
+
 
 .login-flex {
     display: flex;
     flex-direction: row;
+    max-height: 60px
 }
 
 .user-block {
@@ -95,20 +108,26 @@ header {
     flex-direction: row;
     margin-bottom: 80px;
     color: #fff;
-
+    margin-left: 30px;
 }
 
 .features-item {
-    width: 300px;
-    text-transform: uppercase;
+    width: 260px;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 45px;
+    
+
+}
+
+.features-item:last-child {
+    margin-right: 0;
 
 }
 
 .features-name {
     font-size: 30px;
-    line-height: 24px;
+    
+    
 
 }
 
@@ -119,8 +138,7 @@ p {
 
 h2 {
     font-size: 30px;
-    text-transform: uppercase;
-    line-height: 24px;
+    
 
 }
 
@@ -134,8 +152,19 @@ h2 {
 
 }
 
+.btn-btn {
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+
+}
+
 .index-content p, h1 {
-    text-transform: uppercase;
+
 
 }
 
@@ -152,28 +181,54 @@ time {
 
 }
 
-.features-item:last-child {
-    margin-right: 0;
 
-}
 
 .features-item p {
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 24px;
+    font-size: 14px;
 
 }
 
 
 
 .index-content-left {
-    width: 310px;
-    margin-right: 80px;
+    width: 340px;
+    margin-right: 40px;
     margin-left: 80px;
 
 }
 
+.index-content-left p {
+    width: 300px;
+
+}
+
+.news-preview a {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    min-height: 33px;
+    text-align: center;
+    padding-top: 10px;
+    
+
+}
+
+.btn-block {
+    display: flex;
+
+}
+
+.link-btn {
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-top: 30px;
+    min-height: 33px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
 .border {
+    margin-top: 70px
 
 }
 
@@ -181,8 +236,28 @@ time {
     width: 310px;
     margin-left: 80px;
     margin-right: 50px;
+    
 
 }
+
+.btn {
+    color: #fff;
+    display: block;
+    width: 140px;
+    background-color: black;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.index-content-left a {
+
+}
+
 
 .index-content-right form {
     display: flex;
@@ -191,15 +266,16 @@ time {
 }
 
 .gallery img{
-    border: 5px solid #fff
+    border: 5px solid #fff;
+    position: relative;
+    right: 45px;
 
 }
 
 
 .news-preview p {
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: uppercase;
+
+
 }
 
 
@@ -212,11 +288,13 @@ time {
 
 
 
+
+
 footer {
     background-color: #202020;
     color: #fff;
-    font-size: 12px;
-    text-transform:uppercase;
+    font-size: 14px;
+    text-transform: uppercase;
     line-height: 24px;
 
 }
@@ -232,28 +310,46 @@ footer {
 
 
 
-.footer-contacts {
-    margin-right:
+.footer-contacts a {
+    color: #fff;
 
 
 
 }
 
 .footer-social {
-    width: 140px;
-    margin-left: 135px;
-    text-align: center;
+    width: 200px;
+    margin-left: 120px;
+    padding-left: 40px;
+        
+
+    
+    
+
+}
+
+.footer-social span {
+    position: absolute;
+    right: 810px;
+  
+    
 
 }
 
 .footer-social img {
-    padding-top: 10px;
+    padding-left: 5px;
+    padding-top: 35px;
+    
+
+   
+    
 
 }
 
+
 .footer-copyright {
     width: 140px;
-    margin-left: 250px;
+    margin-left: 100px;
     text-align: center;
 
 
@@ -273,16 +369,4 @@ footer {
 
 
 
-.btn {
-    color: #fff;
-    display: block;
-    width: 130px;
-    background-color: black;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 600;
-    padding: 5px;
-    text-decoration: none;
 
-}
