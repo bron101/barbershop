@@ -76,18 +76,46 @@ header {
 .login-flex {
     display: flex;
     flex-direction: row;
-    max-height: 60px
+    
 }
 
 .user-block {
-    min-height: 70px;
-    width: 140px;
-    padding-top: 15px;
-    text-align: right;
-    padding-right: 20px;
+    float: right;
+    max-width: 200px;
+    margin-left: 90px;
+    
 
 }
 
+.login {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 16px 20px;
+    padding-left: 40px;
+    
+}
+
+.login:hover {
+    background: #242424;
+    
+}
+
+.login::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    width: 18px;
+    height: 18px;
+    background: url("../img/icon-login.png") no-repeat;
+    opacity: 0.2;
+}
+
+.login:hover::after {
+    opacity: 1;
+
+}
 .user-block a {
     text-decoration: none;
     color: #fff;
@@ -125,8 +153,27 @@ header {
 }
 
 .features-name {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 45px;
     font-size: 30px;
     
+    
+
+}
+
+.features-name:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -10px;
+    transform: rotate(45deg);
     
 
 }
@@ -160,6 +207,7 @@ h2 {
     padding-top: 8px;
     padding-bottom: 8px;
     border: none;
+    outline: none;
 
 }
 
@@ -251,6 +299,7 @@ time {
     line-height: 24px;
     font-weight: 700;
     text-decoration: none;
+    cursor: pointer;
 
 }
 
@@ -299,6 +348,11 @@ footer {
 
 }
 
+.main-footer {
+  
+}
+
+
 .main-footer .container {
     display: flex;
     flex-direction: row;
@@ -318,6 +372,7 @@ footer {
 }
 
 .footer-social {
+    position: relative;
     width: 200px;
     margin-left: 120px;
     padding-left: 40px;
@@ -330,8 +385,7 @@ footer {
 
 .footer-social span {
     position: absolute;
-    right: 810px;
-  
+    left: 64px;
     
 
 }
@@ -366,6 +420,7 @@ footer {
 .news-preview {
 
 }
+
 
 
 
