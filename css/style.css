@@ -1,16 +1,28 @@
 body {
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 700;
+    font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
     background: #111 url("../img/body-bg.jpg") no-repeat center top;
-    height: 2500px; /* удалить */
+    margin-top: 0px;
 }
 
+.inner-page {
+    color: #000;
+    background: url("/img/features-beck.png")
+
+}
+
+.inner-page .main-header {
+    margin-bottom: 55px;
+
+}
 .container {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+
 }
 
 
@@ -18,6 +30,7 @@ header {
     background-color: #111;
     font-size: 16px;
     text-transform: uppercase;
+    min-height: 60px;
 
 }
 
@@ -29,15 +42,58 @@ header {
 
 }
 
-
-
+/*Распорка*/
+/*
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
 
 .main-navigation {
     width: 780px;
+    display: flex;
 
 }
 
+.main-navigation .active {
+    position: relative;
+    background: none;
+
+
+}
+
+/*Прочекать подчеркивание самого текста в моём случае!*/
+
+.main-navigation .active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    bottom: -17px;
+    
+    
+
+
+}
+
+.main-navigation .active a:hover {
+    background: none;
+
+}
+
+.main-navigation .site-logo {
+    
+
+    width: 111px;
+    height: 20px;
+   
+}
+
 .main-navigation ul {
+    padding: 0;
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -46,18 +102,11 @@ header {
 
 }
 
-.main-navigation li {
-    /*margin-right: 35px; */
-   
 
-}
 
-.main-navigation li:last-child {
-    margin-right: 0;
-
-}
 
 .main-navigation a {
+    
     text-decoration: none;
     color: #fff;
     padding-top: 17.7px;
@@ -77,11 +126,14 @@ header {
     display: flex;
     flex-direction: row;
     
+    
+    
+    
 }
 
 .user-block {
     float: right;
-    max-width: 200px;
+    
     margin-left: 90px;
     
 
@@ -128,6 +180,245 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
+
+}
+
+.inner-page-title h1{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+    
+
+}
+
+.bread-crumbs {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    
+    
+    
+    
+    
+
+
+}
+
+
+
+.bread-crumbs li {
+    display: inline;
+    position: relative;
+    padding-right: 40px;
+    
+    
+
+}
+
+.bread-crumbs li::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    top: 5px;
+    right: 13px;
+    
+    transform: rotate(45deg);
+
+}
+
+.bread-crumbs .current::after {
+    content: none;
+
+}
+
+.bread-crumbs a {
+    
+    text-decoration: none;
+    color: #000;
+  
+
+}
+
+.bread-crumbs a:hover {
+    text-decoration: underline;
+
+}
+
+.bread-crumbs .current {
+    color: grey;
+
+}
+
+
+.inner-page-title {
+  
+
+}
+/*Стили для райса общие*/
+.inner-page-main {
+    margin-bottom: 60px;
+
+}
+
+.inner-page-main h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+
+}
+
+.inner-page-main p {
+    margin: 14px 0;
+
+}
+.inner-page-main table {
+    border-collapse: collapse;
+    
+
+}
+.inner-page-main td {
+    padding: 10px 15px;
+    border: 2px solid #000;
+
+}
+
+
+.big-heading {
+    margin-top: 55px;
+    margin-bottom: 65px;
+    text-align: center;
+    
+    
+        
+
+}
+
+.big-heading h2 {
+    position: relative;
+    z-index: 2;
+    display: inline;
+    margin: 0;
+    padding: 0 25px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: url("/img/features-beck.png");
+    
+    
+
+}
+
+.big-heading::after {
+    content: "";
+    position: relative;
+    z-index: 1;
+    top: -25px;
+    
+    display: block;
+    border-bottom: 2px solid #000;
+
+}
+
+/*
+.product-about b::before {
+    content: "";
+
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #000;
+}
+*/
+
+.features-list {
+    margin: 14px 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.features-list li{
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 20px;
+
+
+}
+.features-list li::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    transform: rotate(45deg);
+    
+
+}
+
+
+/*Эксперимент*/
+
+.main-column {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: row;
+
+  
+
+}
+
+.column-left {
+    width: 425px;
+    margin-right: 60px;
+
+
+}
+
+.column-right {
+    width: 460px;
+    
+    
+
+}
+
+.inner-about-us .column-right {
+    margin-top: 50px;
+
+}
+
+.column-left *:first-child,
+.column-right *:first-child{
+    margin-top: 0;
+
+}
+
+.column-left *:last-child,
+.column-right *:last-child{
+    margin-bottom: 0;
+
+}
+
+.price-table {
+    width: 100%; 
+    
+
+}
+
+.price-table td {
+    width: 50%;
+
+}
+
+.price-table td:last-child {
+    text-align: center;
+    
 
 }
 
@@ -178,16 +469,9 @@ header {
 
 }
 
-p {
-    font-size: 14px
 
-}
 
-h2 {
-    font-size: 30px;
-    
 
-}
 
 .index-content {
     display: flex;
@@ -211,7 +495,8 @@ h2 {
 
 }
 
-.index-content p, h1 {
+.index-content p {
+    font-size: 14px;
 
 
 }
@@ -281,9 +566,41 @@ time {
 }
 
 .index-content-right {
-    width: 310px;
-    margin-left: 80px;
-    margin-right: 50px;
+    width: 290px;
+    padding-left: 30px;
+    padding-right: 50px;
+    margin-left: 50px;
+    margin-right: 40px;
+    
+
+}
+
+form {
+
+}
+
+.appointment-form input {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 10px;
+    padding-right: 0;
+    margin: 10px 25px;
+    margin-left: 0px;
+    border: 2px solid #000;
+    width: 116px;
+    background-color: #f9f6f3;
+
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+
+}
+
+.appointment-form .btn-btn {
+    width: 290px;
     
 
 }
@@ -303,14 +620,19 @@ time {
 
 }
 
+.btn:hover {
+    background-color: #663d15;
+
+}
+
+
 .index-content-left a {
 
 }
 
 
 .index-content-right form {
-    display: flex;
-    flex-direction: row;
+   
 
 }
 
@@ -321,6 +643,11 @@ time {
 
 }
 
+.gallery-prev {
+    opacity: 0.7;
+
+
+}
 
 .news-preview p {
 
@@ -340,7 +667,7 @@ time {
 
 
 footer {
-    background-color: #202020;
+    background: #202020 url("../img/footer-background.png");
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
@@ -362,39 +689,106 @@ footer {
 
 }
 
+.footer-contacts p {
+    margin-top: 0px;
 
+}
 
 .footer-contacts a {
     color: #fff;
+    text-decoration: none;
+    
 
-
+}
+.footer-contacts a:hover {
+    text-decoration: underline;
 
 }
 
 .footer-social {
     position: relative;
-    width: 200px;
-    margin-left: 120px;
-    padding-left: 40px;
+    width: 150px;
+    margin-left: 165px;
+    text-align: center;
+    
+
+    
+    
+
+}
+
+.social-btn {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    font-size: 0px;
+    width: 43px;
+    height: 43px;
+    margin-right: 2px;
+    transition:
+        background-color 1s;
+  
         
 
+}
+
+.footer-social span {
+    display: inline-block;
+    margin-bottom: 10px;
+    
+
+}
+
+.vk-btn {
+    background: #000  url("../img/vk-logo-w.png") no-repeat center;
+    
+  
+
+}
+
+.vk-btn:hover {
+    background: #fff url("../img/vk-logo-b.png") no-repeat center;
+    
+
+
+}
+
+.fb-btn {
+    background: #000  url("../img/fb-logo-w.png") no-repeat center;
+    
+
+}
+
+.fb-btn:hover {
+    background: #fff url("../img/fb-logo-b.png") no-repeat center;
+
+}
+
+.inst-btn {
+    background: #000  url("../img/inst-logo-w.png") no-repeat center;
+
+}
+.inst-btn:hover{
+    background: #fff url("../img/inst-logo-b.png") no-repeat center;
+
+}
+
+.social-btn {
+    
+    
     
     
 
 }
 
 .footer-social span {
-    position: absolute;
-    left: 64px;
+    /*position: absolute;
+    left: 64px;*/
     
 
 }
 
 .footer-social img {
-    padding-left: 5px;
-    padding-top: 35px;
-    
-
    
     
 
@@ -403,24 +797,22 @@ footer {
 
 .footer-copyright {
     width: 140px;
-    margin-left: 100px;
+    margin-left: 160px;
     text-align: center;
 
 
 }
 
-.footer-copyright img {
-    padding-top: 10px;
+.footer-copyright .btn {
+    margin-top: 10px
 
 }
 
-
-
-
-.news-preview {
+.footer-copyright .btn:hover {
+    background: #fff;
+    color: #000;
 
 }
-
 
 
 

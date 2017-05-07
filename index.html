@@ -62,7 +62,7 @@
                             <img src="img/gallery-logo.jpg" width="286" height="164" alt="">
                         </figure>
                         <div class="btn-block">
-                        <button class="btn gallery-prev btn-btn">Назад</button>
+                        <button class="btn gallery-prev btn-btn" disabled>Назад</button>
                         <button class="btn gallery-next btn-btn">Вперед</button>
                         </div>
                     </div>
@@ -92,29 +92,29 @@
                         <input type="text" name="time" value="" placeholder="Время">
                         <input type="text" name="name" value="" placeholder="Имя">
                         <input type="tel" name="phone" value="" placeholder="Телефон">
-                        <button class="btn" type="submit">Отправить</button>
+                        <button class="btn btn-btn" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
         </main>
         <footer class="main-footer">
             <div class="container">
-                <div class="footer-contacts">
-                    Барбершоп "Бородинский"<br>
+                <section class="footer-contacts">
+                    <p>Барбершоп "Бородинский"<br>
                     Адрес: г. Симферополь, ул. Гоголя, д. 18<br>
                     <a href="#">Как нас найти?</a><br>
-                    Телефон: +7 (978) 765-24-54
-                    </div>
-                <div class="footer-social">
-                        <span>Давайте дружить!</span>
-                        <img src="img/vk-logo.png" width="43" height="43" alt="vk">
-                        <img src="img/fb-logo.png" width="43" height="43" alt="fb">
-                        <img src="img/inst-logo.png" width="43" height="43" alt="inst">
-                    </div>
-                <div class="footer-copyright">
+                        Телефон: +7 (978) 765-24-54</p>
+                    </section>
+                <section class="footer-social">
+                      <span>Давайте дружить</span>
+                       <a class="social-btn vk-btn" href="#">Вконтакте</a>
+                        <a class="social-btn fb-btn" href="#">Facebook</a>
+                        <a class="social-btn inst-btn" href="#">Instagram</a>
+                    </section>
+                <section class="footer-copyright">
                     <span>Разработано:</span>
-                    <img src="img/Dmitry_F.png" width="140" height="43" alt="copyright">
-                    </div>
+                    <a class="btn link-btn" href="#">Dmitry_Fedin</a>
+                    </section>
             </div>
         </footer>
     </body>
